@@ -1,0 +1,16 @@
+4
+id|text|info|
+1||top|
+2|<div id="bar">
+<form name="oo" action="/2" method="get">
+<input id="input" name="o" type="text" value="sümer kolçak">
+</form>
+</div>
+
+<a  href="#" id="button" onclick="document.oo.submit()"></a>
+
+
+
+|home|
+3|</body></html>|bottom|
+4||<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">|

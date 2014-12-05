@@ -1,0 +1,7 @@
+nc localhost 4511
+nc localhost 4527
+nc localhost 4539
+nc localhost 4552
+nc localhost 4538
+
+perl -e 'print "\x1a\x0c\x54\xcc"' | nc -u localhost 4777

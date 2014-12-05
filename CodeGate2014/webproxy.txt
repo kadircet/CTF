@@ -1,0 +1,35 @@
+In this challenge we were given a proxy and in the html source code
+a commented line which states:
+admin/index.php
+it was clear that we should get into that file when we tried to get it from outside
+it gave an 403 forbidden error and when you try to get it from inside with exact link
+it was giving Access Denied response. So we figure out that the proxy was
+proccesing the url you requested and if it is contaning one of the "php" or "//"
+it was giving that Access Denied response so we requested the page with just
+localhost/188f6594f694a3ca082f7530b5efc58dedf81b8d/admin/
+which should give the default index and it worked but the response wast trimmed
+we could get just a few lines and we thought that there might be a vuln in
+request that proxy making so i just put the and of the link a %0a which is \n
+and ta-daa the headers were gone we got just the contents of the page something
+went absoultely wrong. When i examined deeply i see that the proxy is working by
+putting the url we requested directly into the request so:
+
+GET "our_url" HTTP/1.1
+Host: xxx
+And other headers.
+.
+.
+.
+
+the get request was happening that way so i manipulated it by hand to use
+Range header it allows us to seek to any wanted byte of the file so i gave an
+url like
+
+localhost/188f6594f694a3ca082f7530b5efc58dedf81b8d/admin/ HTTP/1.1%0d%0aHost:localhost%0d%0aRange:bytes=380-%0d%0a%0d%0a
+
+and the output was checking if the host is "hackme" so i changed my host line
+and rearrangen range field for new file to get the password like this:
+
+localhost/188f6594f694a3ca082f7530b5efc58dedf81b8d/admin/ HTTP/1.1%0d%0aHost:hackme%0d%0aRange: bytes=70-%0d%0a%0d%0a
+
+and ta-daa there is the password.

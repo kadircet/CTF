@@ -1,0 +1,2 @@
+<p id="mail-failure">Unable to send your email! (--wankoff--)</p>
+<!--pastebin DOT com/TYHfKbtt-->

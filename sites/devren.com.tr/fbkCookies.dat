@@ -1,0 +1,4 @@
+#LWP-Cookies-1.0
+Set-Cookie3: datr=orH0UjfbWPOgMNFIJzv-2deD; path="/"; domain=.facebook.com; path_spec; expires="2016-02-07 10:12:51Z"; httponly; version=0
+Set-Cookie3: reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Flogin.php; path="/"; domain=.facebook.com; path_spec; discard; version=0
+Set-Cookie3: reg_fb_ref=https%3A%2F%2Flogin.facebook.com%2Flogin.php; path="/"; domain=.facebook.com; path_spec; discard; version=0

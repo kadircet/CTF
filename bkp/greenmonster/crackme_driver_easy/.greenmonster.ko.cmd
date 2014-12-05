@@ -1,0 +1,1 @@
+cmd_/home/kadircet/Desktop/crackme_driver_easy/greenmonster.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.11.0-17-generic/scripts/module-common.lds --build-id  -o /home/kadircet/Desktop/crackme_driver_easy/greenmonster.ko /home/kadircet/Desktop/crackme_driver_easy/greenmonster.o /home/kadircet/Desktop/crackme_driver_easy/greenmonster.mod.o

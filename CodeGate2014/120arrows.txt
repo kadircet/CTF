@@ -1,0 +1,13 @@
+By seeing the code it was clear that we are going to make a blind sql injection attack.
+The problem was the attack limit we only have 120 chance to get the password,
+password was 30 characters long and it was containing all the lowercase letters
+- which are 26. So in the worst case a linear attack should try 26*30 different
+passwords which is far more than 120. Then the first thing coming into mind is to
+try binary search on each character which should take 6 steps per character in
+the worst case and in total 6*30=180 if we are lucky enough we can find the answer
+in less than that so i give it a try and it worked. If i would be so unlucky
+then i would convert each character to base 3 and look for each digit ,there can
+be almost 3 digits to represnt 26 in base 3, so it would take 3*30=90 which would
+be absolutely enough for the case. And there is our exploit:
+
+

